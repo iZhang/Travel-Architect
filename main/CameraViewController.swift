@@ -80,11 +80,27 @@ class CameraViewController: UIViewController
                 let topClassifications = classifications.prefix(2)
                 let descriptions = topClassifications.map { classification in
                     // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
-                    return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
+                    return String(format: "  %.2f%% %@", classification.confidence * 100, classification.identifier)
                 }
                 self.classificationLabel.text = "The Architect sees:\n" + descriptions.joined(separator: "\n")
             }
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     // MARK: - Photo Actions

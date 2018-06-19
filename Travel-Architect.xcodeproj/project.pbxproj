@@ -29,6 +29,7 @@
 		EB6194D220A57CD000C005D9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6194D020A57CD000C005D9 /* CameraViewController.swift */; };
 		EB6194D320A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		EB6194D920A57D4100C005D9 /* Architecture.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EB6194D720A57D2D00C005D9 /* Architecture.mlmodel */; };
+		EB93F5E320D8B048007778D8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93F5E220D8B048007778D8 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		EB6194D020A57CD000C005D9 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		EB6194D720A57D2D00C005D9 /* Architecture.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Architecture.mlmodel; sourceTree = "<group>"; };
+		EB93F5E220D8B048007778D8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		3929C48A1E89EC2C00E00B60 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				EB93F5E120D8B01B007778D8 /* About */,
 				EB6194D620A57D2300C005D9 /* MLModels */,
 				3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */,
 				3929C48D1E89EC2C00E00B60 /* ViewController.swift */,
@@ -173,6 +176,14 @@
 				EB6194D720A57D2D00C005D9 /* Architecture.mlmodel */,
 			);
 			path = MLModels;
+			sourceTree = "<group>";
+		};
+		EB93F5E120D8B01B007778D8 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				EB93F5E220D8B048007778D8 /* AboutViewController.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 				C41366B91EB80DD400EC054A /* StatusViewController.swift in Sources */,
 				39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */,
 				147062641F06FA790003EE03 /* VirtualObjectSelection.swift in Sources */,
+				EB93F5E320D8B048007778D8 /* AboutViewController.swift in Sources */,
 				C8C12A711F29277B00B011FE /* ViewController+ARSCNViewDelegate.swift in Sources */,
 				C8C2AC521F3A545C00E86BA3 /* VirtualObjectInteraction.swift in Sources */,
 				C46356671EF9CC500080C8D9 /* VirtualObjectARView.swift in Sources */,

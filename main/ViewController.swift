@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     var isRestartAvailable = true
     
     /// A serial queue used to coordinate adding or removing nodes from the scene.
-    let updateQueue = DispatchQueue(label: "com.example.apple-samplecode.arkitexample.serialSceneKitQueue")
+    let updateQueue = DispatchQueue(label: "com.architect.arkit")
     
     var screenCenter: CGPoint {
         let bounds = sceneView.bounds

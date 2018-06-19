@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BnF-B6-CLI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fF2-s0-XNS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="57" y="-358"/>
         </scene>
-        <!--View Controller-->
+        <!--Architect-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Travel_Architect" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +123,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnx-rc-95S">
-                                <rect key="frame" x="0.0" y="20" width="375" height="85"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="z9S-1J-UzK"/>
                                 </constraints>
@@ -171,6 +171,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GBj-4O-Whc"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Architect" id="1Qy-zf-opY"/>
                     <connections>
                         <outlet property="addObjectButton" destination="xcf-ic-uGo" id="uFa-W2-4Iu"/>
                         <outlet property="blurView" destination="R5W-V8-6lY" id="oF2-lD-Srf"/>
@@ -184,6 +185,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="98.50074962518741"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="gNW-Gf-ORl">
+            <objects>
+                <viewController id="XLJ-kk-qHw" customClass="AboutViewController" customModule="Travel_Architect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dai-aT-Ldc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data and Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZW-sL-10c">
+                                <rect key="frame" x="31" y="238" width="135" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-1l-iXs">
+                                <rect key="frame" x="31" y="416" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Travel Architecture covers pre-modern Western architecture, roughly the period from 850 B.C. to A.D. 1400. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uic-wK-Gbu">
+                                <rect key="frame" x="28" y="133" width="317" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-Dj-5FV">
+                                <rect key="frame" x="29" y="267" width="317" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Travel Architecture does not store, save, relay, or in any way use your data. The only permission required is for the camera and gallery, so you can upload or take a photo to be analyzed while traveling. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel Architecture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK0-nZ-bcg">
+                                <rect key="frame" x="31" y="100" width="315" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbQ-AI-llb">
+                                <rect key="frame" x="28" y="445" width="317" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">To function correctly, ARKit requires an A9 processor or above. iPhones older than the 6S and iPads built earlier than 2017 will likely not run the application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xtw-ls-hAu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="pj7-0j-7Z9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMY-TX-2B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778.39999999999998" y="823.53823088455783"/>
         </scene>
         <!--Virtual Object Selection View Controller-->
         <scene sceneID="8F1-Zd-946">
@@ -250,6 +313,22 @@
             </objects>
             <point key="canvasLocation" x="56" y="636"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d6e-qV-Njd">
+            <objects>
+                <navigationController id="fF2-s0-XNS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkw-cU-ALj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2U3-g1-dia" kind="relationship" relationship="rootViewController" id="o1W-nb-VCm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EC5-RK-w1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1650" y="99"/>
+        </scene>
         <!--Camera View Controller-->
         <scene sceneID="MkW-tN-iPX">
             <objects>
@@ -272,7 +351,13 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bSn-5c-sdH"/>
                                     <barButtonItem title="Architect" id="NuL-U4-f7c">
                                         <connections>
-                                            <segue destination="BV1-FR-VrT" kind="presentation" id="9ho-C6-w0u"/>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="gY0-kX-KGG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0U6-KJ-Nu9"/>
+                                    <barButtonItem title="About" id="fFb-zQ-Yw9">
+                                        <connections>
+                                            <segue destination="XLJ-kk-qHw" kind="show" id="X2A-q8-LCA"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -330,24 +415,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5J-hd-Byk" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-778" y="99"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ftU-A1-gvU">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BnF-B6-CLI" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1s0-BF-hzN">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2U3-g1-dia" kind="relationship" relationship="rootViewController" id="ADt-t5-sgz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uCN-fb-DwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1650" y="99"/>
         </scene>
     </scenes>
     <resources>
