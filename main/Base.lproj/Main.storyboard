@@ -194,52 +194,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data and Privacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZW-sL-10c">
-                                <rect key="frame" x="31" y="238" width="135" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-1l-iXs">
-                                <rect key="frame" x="31" y="416" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Travel Architecture covers pre-modern Western architecture, roughly the period from 850 B.C. to A.D. 1400. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uic-wK-Gbu">
-                                <rect key="frame" x="28" y="133" width="317" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-cC-Btc">
+                                <rect key="frame" x="8" y="79" width="359" height="578"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-Dj-5FV">
-                                <rect key="frame" x="29" y="267" width="317" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Travel Architecture does not store, save, relay, or in any way use your data. The only permission required is for the camera and gallery, so you can upload or take a photo to be analyzed while traveling. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel Architecture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK0-nZ-bcg">
-                                <rect key="frame" x="31" y="100" width="315" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbQ-AI-llb">
-                                <rect key="frame" x="28" y="445" width="317" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">To function correctly, ARKit requires an A9 processor or above. iPhones older than the 6S and iPads built earlier than 2017 will likely not run the application.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <mutableString key="text">*Travel Architecture*
+ An easy-to-use app to learn more about pre-modern architecture. Designed for travelers and students abroad who are curious what a particular building's architectural style is.
+
+*About*
+
+Travel Architecture covers pre-modern Western architecture, roughly spanning the time period from 850 B.C. to A.D. 1400. Selected photos from each major architectural style (classical, byzantine, romanesque, and gothic) were used to train a neural net, which is then applied to any new photo received. A confidence score is returned based on features detected in each photo. The architect then walks the user through each architectural style using a representative 3D model of a building that exemplifies the construction of that time period. 
+
+Classical: Parthenon. Athens, Greece. Completed circa 432 B.C.
+
+Byzantine: Hagia Sophia. Istanbul, Turkey (formerly Constantinople). Completed circa 537 A.D.
+
+Romanesque: Collegiate Church of St. Mary and St. Alexius. Tum, Poland. Completed circa 1161 A.D.
+
+Gothic: Reims Cathedral. Reims, France. Completed circa 1275 A.D. 
+
+Modern architecture (Renaissance and beyond) often sample the distinctive pre-modern styles, especially Classical. Later versions of this app will include classification for modern architecture. 
+
+*Method of Use*
+
+1. Select a photo from your gallery or take a photo using your camera
+2. A computer vision model leverages a neural net to classify features in your photo and presents the top two architectural styles the model believes are present in the photo
+3. Click on architect
+4. Choose a flat surface with good lighting and place an example building of the four pre-modern architectural styles available. A chalkboard appears above each model to teach you more about what you're seeing
+5. Walk around the model to see the building from different angles and compare it to the building you took a photo of
+
+*Neural Net*
+
+This app utilizes Microsoft's custom vision services, available at https://www.customvision.ai/. The machine learning model comes packaged with each install of the application and does not reach out to any endpoints or services over the internet.
+
+*Data Privacy and Security*
+
+This app is entirely self-contained and does not access any public APIs or websites, nor does it collect or share user data. Camera permissions are required to analyze photos, but the app does not store any information whatsoever from your camera/gallery or otherwise.  
+
+*License*
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*Developer*
+
+This app was developed by Ian Zhang, and you can find the code @ https://github.com/iZhang/travel-architecture</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jtw-cC-Btc" firstAttribute="top" secondItem="xtw-ls-hAu" secondAttribute="top" constant="15" id="Gl4-Z3-LjL"/>
+                            <constraint firstItem="xtw-ls-hAu" firstAttribute="trailing" secondItem="jtw-cC-Btc" secondAttribute="trailing" constant="8" id="L8T-d4-fmv"/>
+                            <constraint firstItem="jtw-cC-Btc" firstAttribute="leading" secondItem="xtw-ls-hAu" secondAttribute="leading" constant="8" id="YNv-KG-mDg"/>
+                            <constraint firstItem="xtw-ls-hAu" firstAttribute="bottom" secondItem="jtw-cC-Btc" secondAttribute="bottom" constant="10" id="fk6-rV-fVg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xtw-ls-hAu"/>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="pj7-0j-7Z9"/>
@@ -355,7 +367,8 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="0U6-KJ-Nu9"/>
-                                    <barButtonItem title="About" id="fFb-zQ-Yw9">
+                                    <barButtonItem title="About" image="about-button" landscapeImage="about-button" largeContentSizeImage="about-button" id="fFb-zQ-Yw9">
+                                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-14" maxY="0.0"/>
                                         <connections>
                                             <segue destination="XLJ-kk-qHw" kind="show" id="X2A-q8-LCA"/>
                                         </connections>
@@ -414,10 +427,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5J-hd-Byk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="99"/>
+            <point key="canvasLocation" x="-778.39999999999998" y="98.50074962518741"/>
         </scene>
     </scenes>
     <resources>
+        <image name="about-button" width="44" height="44"/>
         <image name="add" width="48" height="48"/>
         <image name="restart" width="20" height="23"/>
         <image name="restartPressed" width="20" height="23"/>
