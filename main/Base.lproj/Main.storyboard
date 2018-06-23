@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9h-Vm-ZUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="-358"/>
+            <point key="canvasLocation" x="-326" y="-363"/>
         </scene>
         <!--Architect-->
         <scene sceneID="tXr-a1-R10">
@@ -171,7 +171,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GBj-4O-Whc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Architect" id="1Qy-zf-opY"/>
+                    <navigationItem key="navigationItem" title="Architect" id="1Qy-zf-opY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="IZO-hq-RHC">
+                            <connections>
+                                <segue destination="XgS-sh-4hd" kind="show" id="i52-Sl-cq2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addObjectButton" destination="xcf-ic-uGo" id="uFa-W2-4Iu"/>
                         <outlet property="blurView" destination="R5W-V8-6lY" id="oF2-lD-Srf"/>
@@ -184,7 +190,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="98.50074962518741"/>
+            <point key="canvasLocation" x="-326" y="95"/>
+        </scene>
+        <!--Root Page View Controller-->
+        <scene sceneID="axE-ST-eHE">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XgS-sh-4hd" customClass="RootPageViewController" customModule="Travel_Architect" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psy-j9-Fg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="99"/>
+        </scene>
+        <!--Romanesque-->
+        <scene sceneID="ye3-9y-5ZW">
+            <objects>
+                <viewController storyboardIdentifier="Romanesque" title="Romanesque" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6eS-mW-GfO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8mn-OK-3Gb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MTX-AU-rfY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62S-LP-Z4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="99"/>
+        </scene>
+        <!--Gothic-->
+        <scene sceneID="KSK-fj-Sxj">
+            <objects>
+                <viewController storyboardIdentifier="Gothic" title="Gothic" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nZV-4N-aws" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MKP-l3-lMR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIU-Ns-u3i">
+                                <rect key="frame" x="16" y="51" width="343" height="519"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Gothic architecture, roughly spanning the 12th - 16th centuries, expanded on Romanesque styles, with taller and more intricate forms. 
+
+On both the front and the back of the Reims Cathedral, a prototypical Gothic construction, there are many pointed arches; flying buttresses feature prominently on the back of the construction. 
+
+Pointed arches and flying buttresses were innovations by builders at the time to support higher and more expansive designs. In the United States and Europe, the Gothic revival in the 18th and 19th centuries sampled heavily from this period. 
+
+Gothic architecture eventually gave way to Renaissance architecture, as builders broke away from the rigid medieval style.   </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uii-Me-sep"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fT-nA-ssf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015" y="99"/>
+        </scene>
+        <!--Classical-->
+        <scene sceneID="VnB-6B-to5">
+            <objects>
+                <viewController storyboardIdentifier="Classical" title="Classical" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7kO-YC-jcW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YUb-Lc-fSz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DBV-sB-cM1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0S-7q-d02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="99"/>
+        </scene>
+        <!--Byzantine-->
+        <scene sceneID="eBB-k4-7BX">
+            <objects>
+                <viewController storyboardIdentifier="Byzantine" title="Byzantine" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5zf-4L-Gru" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebK-Aw-g8w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0cC-r7-ytI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CD-yJ-8UC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695" y="99"/>
         </scene>
         <!--About-->
         <scene sceneID="gNW-Gf-ORl">
@@ -258,7 +343,7 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMY-TX-2B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778.39999999999998" y="823.53823088455783"/>
+            <point key="canvasLocation" x="-995" y="824"/>
         </scene>
         <!--Virtual Object Selection View Controller-->
         <scene sceneID="8F1-Zd-946">
@@ -323,7 +408,7 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7J-OO-ac9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="636"/>
+            <point key="canvasLocation" x="-326" y="632"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d6e-qV-Njd">
@@ -427,7 +512,7 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5J-hd-Byk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778.39999999999998" y="98.50074962518741"/>
+            <point key="canvasLocation" x="-995" y="99"/>
         </scene>
     </scenes>
     <resources>

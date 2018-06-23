@@ -30,6 +30,7 @@
 		EB6194D320A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		EB6194D920A57D4100C005D9 /* Architecture.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EB6194D720A57D2D00C005D9 /* Architecture.mlmodel */; };
 		EB93F5E320D8B048007778D8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB93F5E220D8B048007778D8 /* AboutViewController.swift */; };
+		EB9D579520DDCA900040C4C6 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9D579420DDCA900040C4C6 /* RootPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		EB6194D720A57D2D00C005D9 /* Architecture.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Architecture.mlmodel; sourceTree = "<group>"; };
 		EB93F5E220D8B048007778D8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EB9D579420DDCA900040C4C6 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,7 @@
 				C812D8671F47628300344E73 /* ThresholdPanGesture.swift */,
 				EB6194D020A57CD000C005D9 /* CameraViewController.swift */,
 				EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
-				EB3A18CB20C9EC77006337B4 /* Virtual Text */,
+				EB9D579320DDCA3D0040C4C6 /* Page View */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* Focus Square */,
 				1488324B1EFC3EBF0043E0AB /* Additional View Controllers */,
@@ -163,13 +165,6 @@
 			path = "Virtual Objects";
 			sourceTree = "<group>";
 		};
-		EB3A18CB20C9EC77006337B4 /* Virtual Text */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Virtual Text";
-			sourceTree = "<group>";
-		};
 		EB6194D620A57D2300C005D9 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +179,14 @@
 				EB93F5E220D8B048007778D8 /* AboutViewController.swift */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		EB9D579320DDCA3D0040C4C6 /* Page View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D579420DDCA900040C4C6 /* RootPageViewController.swift */,
+			);
+			path = "Page View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +271,7 @@
 				1488323F1EFC378A0043E0AB /* ViewController+Actions.swift in Sources */,
 				3929C48E1E89EC2C00E00B60 /* ViewController.swift in Sources */,
 				C41366B91EB80DD400EC054A /* StatusViewController.swift in Sources */,
+				EB9D579520DDCA900040C4C6 /* RootPageViewController.swift in Sources */,
 				39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */,
 				147062641F06FA790003EE03 /* VirtualObjectSelection.swift in Sources */,
 				EB93F5E320D8B048007778D8 /* AboutViewController.swift in Sources */,
