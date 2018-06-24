@@ -207,12 +207,59 @@
                     <view key="view" contentMode="scaleToFill" id="8mn-OK-3Gb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romanesque: 500 CE - 1100 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-MG-GZT">
+                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="4lN-ow-w8Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBM-iY-hpY">
+                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">As Europe gradually emerged into a loose collection of political states in medieval times, the building of castles with thick walls and and large towers became popular as a statement of power. 
+ Churches took on a similar look and feel during this period, losing the ornamental pieces, as well as the domed roofs. Instead they took on sturdy pillars and barrel vaulted interiors. 
+
+This distinctive style is known as Romanesque architecture, and developed at varying times across Europe from the 6th - 11th centuries. During this time, major events like the Crusades brought people and ideas, as well as building styles, across large swaths of Europe. Thus the Romanesque look and feel is remarkably consistent from Western Europe to Eastern Europe. 
+
+For instance the Collegiate Church of St. Mary and St. Alexius in Poland features thick walls and semi-circular arches that remind viewers more of a castle than a church. When the feudal system began to fade and towns gained in prosperity and freedom, builders began to expand on existing romanesque forms. This expansion would lead architects into the age of Gothic architecture.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-f1-Ezt">
+                                <rect key="frame" x="6" y="99" width="363" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="LWx-WS-plw"/>
+                                </constraints>
+                                <string key="text">Featured building: Collegiate Church of St. Mary and St. Alexius 
+Location: Tum, Poland Completed: circa 1161 AD</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AD3-MG-GZT" firstAttribute="top" secondItem="MTX-AU-rfY" secondAttribute="top" constant="40" id="0Zl-sJ-LWU"/>
+                            <constraint firstItem="MTX-AU-rfY" firstAttribute="trailing" secondItem="WbN-f1-Ezt" secondAttribute="trailing" constant="6" id="1N7-9L-SFC"/>
+                            <constraint firstItem="MTX-AU-rfY" firstAttribute="trailing" secondItem="ZBM-iY-hpY" secondAttribute="trailing" constant="20" id="KHN-Z0-0wI"/>
+                            <constraint firstItem="WbN-f1-Ezt" firstAttribute="top" secondItem="AD3-MG-GZT" secondAttribute="bottom" constant="10" id="Ltf-ig-3eM"/>
+                            <constraint firstItem="ZBM-iY-hpY" firstAttribute="top" secondItem="WbN-f1-Ezt" secondAttribute="bottom" constant="20" id="SVM-Cg-9Wd"/>
+                            <constraint firstItem="AD3-MG-GZT" firstAttribute="leading" secondItem="MTX-AU-rfY" secondAttribute="leading" constant="20" id="UQK-CD-hdn"/>
+                            <constraint firstItem="MTX-AU-rfY" firstAttribute="bottom" secondItem="ZBM-iY-hpY" secondAttribute="bottom" constant="40" id="aUw-20-YFw"/>
+                            <constraint firstItem="MTX-AU-rfY" firstAttribute="trailing" secondItem="AD3-MG-GZT" secondAttribute="trailing" constant="20" id="f2u-cE-aDg"/>
+                            <constraint firstItem="ZBM-iY-hpY" firstAttribute="leading" secondItem="MTX-AU-rfY" secondAttribute="leading" constant="20" id="guX-ZQ-a15"/>
+                            <constraint firstItem="WbN-f1-Ezt" firstAttribute="leading" secondItem="MTX-AU-rfY" secondAttribute="leading" constant="6" id="yrm-Wj-iW3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MTX-AU-rfY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62S-LP-Z4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="99"/>
+            <point key="canvasLocation" x="2364" y="98.50074962518741"/>
         </scene>
         <!--Gothic-->
         <scene sceneID="KSK-fj-Sxj">
@@ -222,12 +269,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIU-Ns-u3i">
-                                <rect key="frame" x="16" y="51" width="343" height="519"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Gothic architecture, roughly spanning the 12th - 16th centuries, expanded on Romanesque styles, with taller and more intricate forms. 
-
-On both the front and the back of the Reims Cathedral, a prototypical Gothic construction, there are many pointed arches; flying buttresses feature prominently on the back of the construction. 
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIU-Ns-u3i">
+                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                                <mutableString key="text">Gothic architecture, roughly spanning the 12th - 16th centuries, expanded on Romanesque styles, with taller and more intricate forms. On both the front and the back of the Reims Cathedral, a prototypical Gothic construction, there are many pointed arches; flying buttresses feature prominently on the back of the construction. 
 
 Pointed arches and flying buttresses were innovations by builders at the time to support higher and more expansive designs. In the United States and Europe, the Gothic revival in the 18th and 19th centuries sampled heavily from this period. 
 
@@ -235,13 +279,46 @@ Gothic architecture eventually gave way to Renaissance architecture, as builders
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gothic: 1100 CE - 1500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DM2-EW-x2A">
+                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="sjU-5s-0ar"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-91-3hh">
+                                <rect key="frame" x="20" y="99" width="335" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="fEh-Z2-vy7"/>
+                                </constraints>
+                                <string key="text">Featured building: Reims Cathedral 
+Location: Reims, France Completed: circa 1275 AD</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Eno-91-3hh" firstAttribute="top" secondItem="DM2-EW-x2A" secondAttribute="bottom" constant="10" id="50t-5K-oSA"/>
+                            <constraint firstItem="Uii-Me-sep" firstAttribute="trailing" secondItem="DM2-EW-x2A" secondAttribute="trailing" constant="20" id="GNt-NQ-VUu"/>
+                            <constraint firstItem="Uii-Me-sep" firstAttribute="bottom" secondItem="XIU-Ns-u3i" secondAttribute="bottom" constant="40" id="KI9-ou-8Gd"/>
+                            <constraint firstItem="XIU-Ns-u3i" firstAttribute="top" secondItem="Eno-91-3hh" secondAttribute="bottom" constant="20" id="QZw-RQ-VKb"/>
+                            <constraint firstItem="DM2-EW-x2A" firstAttribute="leading" secondItem="Uii-Me-sep" secondAttribute="leading" constant="20" id="Rwd-9Z-id8"/>
+                            <constraint firstItem="DM2-EW-x2A" firstAttribute="top" secondItem="Uii-Me-sep" secondAttribute="top" constant="40" id="TfI-OZ-ixP"/>
+                            <constraint firstItem="XIU-Ns-u3i" firstAttribute="leading" secondItem="Uii-Me-sep" secondAttribute="leading" constant="20" id="UlU-Mr-6sQ"/>
+                            <constraint firstItem="Uii-Me-sep" firstAttribute="trailing" secondItem="XIU-Ns-u3i" secondAttribute="trailing" constant="20" id="e3y-Cl-XWz"/>
+                            <constraint firstItem="Uii-Me-sep" firstAttribute="trailing" secondItem="Eno-91-3hh" secondAttribute="trailing" constant="20" id="eDY-4m-cI0"/>
+                            <constraint firstItem="Eno-91-3hh" firstAttribute="leading" secondItem="Uii-Me-sep" secondAttribute="leading" constant="20" id="f98-HR-h4C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uii-Me-sep"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fT-nA-ssf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3015" y="99"/>
+            <point key="canvasLocation" x="3013.5999999999999" y="98.50074962518741"/>
         </scene>
         <!--Classical-->
         <scene sceneID="VnB-6B-to5">
@@ -250,12 +327,59 @@ Gothic architecture eventually gave way to Renaissance architecture, as builders
                     <view key="view" contentMode="scaleToFill" id="YUb-Lc-fSz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classical: 800 BCE - 500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fK-D0-nCD">
+                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="DiO-q6-NcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-Aj-SCo">
+                                <rect key="frame" x="20" y="99" width="335" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="dfo-8V-naT"/>
+                                </constraints>
+                                <string key="text">Featured building: Parthenon 
+Location: Athens, Greece Completed: circa 432 BCE</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-jx-AcI">
+                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">The buildings of the Classical era represent some of the oldest structures in Western civilization, and are marked by extreme symmetry and proportion.  
+
+Spanning roughly 800 B.C to 500 A.D., architects used distinctive columns to prop up entablatures (horizontal supports) that often contained sculpts of Gods. The Parthenon, perhaps the epitome of Ancient Grecian architecture, stands as a perfect example of the Classical form. 
+
+These buildings are among the most re-sampled throughout history. Neo-classical, Renaissance, Classical Revival, and many other styles borrowed heavily from Ancient Greek and Roman builders. Particularly in the United States, government buildings and state capitols almost always feature distinctive Classical columns. As the Roman empire expanded and Eastern influences arrived, Classical forms gave way to Byzantine architecture.   </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="264-Aj-SCo" firstAttribute="top" secondItem="2fK-D0-nCD" secondAttribute="bottom" constant="10" id="5pL-zb-f5y"/>
+                            <constraint firstItem="gvR-jx-AcI" firstAttribute="leading" secondItem="DBV-sB-cM1" secondAttribute="leading" constant="20" id="AYO-eg-er1"/>
+                            <constraint firstItem="DBV-sB-cM1" firstAttribute="trailing" secondItem="gvR-jx-AcI" secondAttribute="trailing" constant="20" id="Db2-lP-aha"/>
+                            <constraint firstItem="2fK-D0-nCD" firstAttribute="leading" secondItem="DBV-sB-cM1" secondAttribute="leading" constant="20" id="ICr-Qw-Ill"/>
+                            <constraint firstItem="gvR-jx-AcI" firstAttribute="top" secondItem="264-Aj-SCo" secondAttribute="bottom" constant="20" id="eTA-b2-PKR"/>
+                            <constraint firstItem="DBV-sB-cM1" firstAttribute="trailing" secondItem="264-Aj-SCo" secondAttribute="trailing" constant="20" id="hNu-l6-nOc"/>
+                            <constraint firstItem="264-Aj-SCo" firstAttribute="leading" secondItem="DBV-sB-cM1" secondAttribute="leading" constant="20" id="jwY-QF-dio"/>
+                            <constraint firstItem="DBV-sB-cM1" firstAttribute="trailing" secondItem="2fK-D0-nCD" secondAttribute="trailing" constant="20" id="oKH-F8-E1v"/>
+                            <constraint firstItem="2fK-D0-nCD" firstAttribute="top" secondItem="DBV-sB-cM1" secondAttribute="top" constant="40" id="qvx-bM-4Pv"/>
+                            <constraint firstItem="264-Aj-SCo" firstAttribute="leading" secondItem="DBV-sB-cM1" secondAttribute="leading" constant="20" id="tcQ-Ov-hhQ"/>
+                            <constraint firstItem="DBV-sB-cM1" firstAttribute="bottom" secondItem="gvR-jx-AcI" secondAttribute="bottom" constant="40" id="xfA-uK-lNw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DBV-sB-cM1"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0S-7q-d02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1034" y="99"/>
+            <point key="canvasLocation" x="1032.8" y="98.50074962518741"/>
         </scene>
         <!--Byzantine-->
         <scene sceneID="eBB-k4-7BX">
@@ -264,12 +388,58 @@ Gothic architecture eventually gave way to Renaissance architecture, as builders
                     <view key="view" contentMode="scaleToFill" id="ebK-Aw-g8w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-XB-E5d">
+                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Byzantine Architecture lasted from the 6th to the 15th centuries and rose and fell with the Byzantine Empire. Under Constantine the Great, the Roman empire moved its capitol to modern-day Turkey in the 4th century, sweeping in an era of engineering influence from across the Middle East.  
+
+Builders added domed roofs (traditionally seen on mosques) to classical forms and switched to brick as their primary construction material. The Hagia Sophia stands as one of the first major architectural marvels to exemplify Byzantine architecture.
+
+In Europe, architects moved on to Romanesque architecture fairly quickly as society transitioned into medieval times. However, Byzantine architecture would continue to spread like wildfire throughout the Middle East and beyond: even today visitors to Russia can see the neo-Byzantine forms that extend across the entire Western portion of the country. The domed roofs would prove to be a lasting addition to architecture around the world.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Byzantine: 500 CE - 1500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-wS-FDR">
+                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="F41-jK-S9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sM-uE-kZl">
+                                <rect key="frame" x="20" y="99" width="335" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="0Df-A9-Vt4"/>
+                                </constraints>
+                                <string key="text">Featured building: Hagia Sophia 
+Location: Istanbul, Turkey Completed: circa 537 AD</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NiO-wS-FDR" firstAttribute="leading" secondItem="0cC-r7-ytI" secondAttribute="leading" constant="20" id="2CZ-fb-OG1"/>
+                            <constraint firstItem="0cC-r7-ytI" firstAttribute="trailing" secondItem="DOe-XB-E5d" secondAttribute="trailing" constant="20" id="7jY-Zi-fms"/>
+                            <constraint firstItem="0cC-r7-ytI" firstAttribute="trailing" secondItem="2sM-uE-kZl" secondAttribute="trailing" constant="20" id="C8U-13-MUc"/>
+                            <constraint firstItem="DOe-XB-E5d" firstAttribute="top" secondItem="2sM-uE-kZl" secondAttribute="bottom" constant="20" id="EKn-bu-HrP"/>
+                            <constraint firstItem="0cC-r7-ytI" firstAttribute="trailing" secondItem="NiO-wS-FDR" secondAttribute="trailing" constant="20" id="N2n-3o-GCM"/>
+                            <constraint firstItem="2sM-uE-kZl" firstAttribute="leading" secondItem="0cC-r7-ytI" secondAttribute="leading" constant="20" id="Nw3-Id-RQi"/>
+                            <constraint firstItem="NiO-wS-FDR" firstAttribute="top" secondItem="0cC-r7-ytI" secondAttribute="top" constant="40" id="eYP-F8-zF9"/>
+                            <constraint firstItem="DOe-XB-E5d" firstAttribute="leading" secondItem="0cC-r7-ytI" secondAttribute="leading" constant="20" id="iCS-Kc-50C"/>
+                            <constraint firstItem="0cC-r7-ytI" firstAttribute="bottom" secondItem="DOe-XB-E5d" secondAttribute="bottom" constant="40" id="reA-7K-58E"/>
+                            <constraint firstItem="2sM-uE-kZl" firstAttribute="top" secondItem="NiO-wS-FDR" secondAttribute="bottom" constant="10" id="uNW-96-pJk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0cC-r7-ytI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CD-yJ-8UC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695" y="99"/>
+            <point key="canvasLocation" x="1693.5999999999999" y="98.50074962518741"/>
         </scene>
         <!--About-->
         <scene sceneID="gNW-Gf-ORl">
@@ -289,7 +459,7 @@ Gothic architecture eventually gave way to Renaissance architecture, as builders
 
 Travel Architecture covers pre-modern Western architecture, roughly spanning the time period from 850 B.C. to A.D. 1400. Selected photos from each major architectural style (classical, byzantine, romanesque, and gothic) were used to train a neural net, which is then applied to any new photo received. A confidence score is returned based on features detected in each photo. The architect then walks the user through each architectural style using a representative 3D model of a building that exemplifies the construction of that time period. 
 
-Classical: Parthenon. Athens, Greece. Completed circa 432 B.C.
+Classical: Parthenon. Athens, Greece. 
 
 Byzantine: Hagia Sophia. Istanbul, Turkey (formerly Constantinople). Completed circa 537 A.D.
 
