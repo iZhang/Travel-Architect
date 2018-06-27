@@ -126,8 +126,6 @@
 		3929C48A1E89EC2C00E00B60 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				EB93F5E120D8B01B007778D8 /* About */,
-				EB6194D620A57D2300C005D9 /* MLModels */,
 				3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */,
 				3929C48D1E89EC2C00E00B60 /* ViewController.swift */,
 				C8C12A701F29277B00B011FE /* ViewController+ARSCNViewDelegate.swift */,
@@ -136,8 +134,9 @@
 				C46356661EF9CC480080C8D9 /* VirtualObjectARView.swift */,
 				1488323E1EFC378A0043E0AB /* ViewController+Actions.swift */,
 				C812D8671F47628300344E73 /* ThresholdPanGesture.swift */,
-				EB6194D020A57CD000C005D9 /* CameraViewController.swift */,
-				EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				EB7BF28820E2075F0074267F /* Camera Controller */,
+				EB93F5E120D8B01B007778D8 /* About */,
+				EB6194D620A57D2300C005D9 /* MLModels */,
 				EB9D579320DDCA3D0040C4C6 /* Page View */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* Focus Square */,
@@ -171,6 +170,15 @@
 				EB6194D720A57D2D00C005D9 /* Architecture.mlmodel */,
 			);
 			path = MLModels;
+			sourceTree = "<group>";
+		};
+		EB7BF28820E2075F0074267F /* Camera Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB6194D020A57CD000C005D9 /* CameraViewController.swift */,
+				EB6194D120A57CD000C005D9 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+			);
+			path = "Camera Controller";
 			sourceTree = "<group>";
 		};
 		EB93F5E120D8B01B007778D8 /* About */ = {

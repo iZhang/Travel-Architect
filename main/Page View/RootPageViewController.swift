@@ -37,6 +37,8 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDelegate
         {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
+        
+        self.title = self.restorationIdentifier
     }
 }
 

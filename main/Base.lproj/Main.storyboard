@@ -1,16 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fF2-s0-XNS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Classifier-Tutorial-->
+        <scene sceneID="CU9-KJ-fmA">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" title="Classifier-Tutorial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zik-Ca-Vf8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6F-Ub-qi8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-icon" translatesAutoresizingMaskIntoConstraints="NO" id="I27-kL-cl5">
+                                <rect key="frame" x="25" y="251" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="architect-icon" translatesAutoresizingMaskIntoConstraints="NO" id="4bT-aI-1dz">
+                                <rect key="frame" x="165" y="251" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Architecture is designed for you: travelers who want to learn more about pre-modern architecture." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8In-fN-Wke">
+                                <rect key="frame" x="25" y="70" width="325" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a building to classify" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHT-RQ-z5D">
+                                <rect key="frame" x="0.0" y="336" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Model a classification in 3D" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t9-SE-h5l">
+                                <rect key="frame" x="137" y="336" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9O-5o-cAQ">
+                                <rect key="frame" x="166" y="575" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" image="cancel-icon"/>
+                                <connections>
+                                    <segue destination="fF2-s0-XNS" kind="show" id="yB3-Yq-Z8L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Learning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0S-Dt-LsE">
+                                <rect key="frame" x="137" y="546" width="109" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" fixedFrame="YES" text="Learn the historical context" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9l-oN-yvz">
+                                <rect key="frame" x="277" y="336" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book-icon" translatesAutoresizingMaskIntoConstraints="NO" id="1da-rZ-Nja">
+                                <rect key="frame" x="305" y="251" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UjG-sX-j1W" firstAttribute="trailing" secondItem="8In-fN-Wke" secondAttribute="trailing" constant="25" id="MaN-jv-QRa"/>
+                            <constraint firstItem="8In-fN-Wke" firstAttribute="top" secondItem="UjG-sX-j1W" secondAttribute="top" constant="50" id="TuF-cd-mvL"/>
+                            <constraint firstItem="8In-fN-Wke" firstAttribute="leading" secondItem="UjG-sX-j1W" secondAttribute="leading" constant="25" id="mFY-S2-JJL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UjG-sX-j1W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWJ-Xp-mVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2151" y="-626"/>
+        </scene>
         <!--Status View Controller-->
         <scene sceneID="5Tw-8P-01p">
             <objects>
@@ -190,15 +266,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326" y="95"/>
+            <point key="canvasLocation" x="-326" y="99"/>
         </scene>
         <!--Root Page View Controller-->
         <scene sceneID="axE-ST-eHE">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XgS-sh-4hd" customClass="RootPageViewController" customModule="Travel_Architect" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XgS-sh-4hd" customClass="RootPageViewController" customModule="Travel_Architect" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psy-j9-Fg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="379" y="99"/>
+            <point key="canvasLocation" x="540" y="99"/>
         </scene>
         <!--Romanesque-->
         <scene sceneID="ye3-9y-5ZW">
@@ -208,8 +284,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romanesque: 500 CE - 1100 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-MG-GZT">
-                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romanesque: 500 - 1100 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-MG-GZT">
+                                <rect key="frame" x="20" y="104" width="335" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="4lN-ow-w8Q"/>
                                 </constraints>
@@ -217,20 +293,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBM-iY-hpY">
-                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBM-iY-hpY">
+                                <rect key="frame" x="20" y="238" width="335" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">As Europe gradually emerged into a loose collection of political states in medieval times, the building of castles with thick walls and and large towers became popular as a statement of power. 
+                                <mutableString key="text">After the fall of the Roman empire, Europe gradually emerged into a loose collection of political states. Commonly referred to as medieval times, this era saw aggressive military leaders request castles with thick walls and large towers as statements of power. 
  Churches took on a similar look and feel during this period, losing the ornamental pieces, as well as the domed roofs. Instead they took on sturdy pillars and barrel vaulted interiors. 
 
-This distinctive style is known as Romanesque architecture, and developed at varying times across Europe from the 6th - 11th centuries. During this time, major events like the Crusades brought people and ideas, as well as building styles, across large swaths of Europe. Thus the Romanesque look and feel is remarkably consistent from Western Europe to Eastern Europe. 
+The distinctive style known as Romanesque architecture developed at varying times across Europe from the 6th - 11th centuries. During this time, major events like the Crusades brought people and ideas, as well as building styles, across large swaths of Europe. Unlike other styles, which often took on local influence, the Romanesque look and feel is remarkably consistent from Western Europe to Eastern Europe. 
 
-For instance the Collegiate Church of St. Mary and St. Alexius in Poland features thick walls and semi-circular arches that remind viewers more of a castle than a church. When the feudal system began to fade and towns gained in prosperity and freedom, builders began to expand on existing romanesque forms. This expansion would lead architects into the age of Gothic architecture.</mutableString>
+The Collegiate Church of St. Mary and St. Alexius in Poland features thick walls and semi-circular arches that remind viewers more of a castle than of a church. A relatively short-lived Romanesque revival bloomed in the 19th century in parallel with the Gothic revival.
+
+In Europe, the feudal system began to fade and towns gained in prosperity and freedom. Accordingly builders began to expand on existing romanesque forms. Expansive requests to go higher and bigger would lead architects into the age of Gothic architecture.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-f1-Ezt">
-                                <rect key="frame" x="6" y="99" width="363" height="75"/>
+                                <rect key="frame" x="6" y="143" width="363" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="LWx-WS-plw"/>
                                 </constraints>
@@ -256,10 +334,11 @@ Location: Tum, Poland Completed: circa 1161 AD</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MTX-AU-rfY"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62S-LP-Z4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="98.50074962518741"/>
+            <point key="canvasLocation" x="2562" y="99"/>
         </scene>
         <!--Gothic-->
         <scene sceneID="KSK-fj-Sxj">
@@ -269,18 +348,20 @@ Location: Tum, Poland Completed: circa 1161 AD</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIU-Ns-u3i">
-                                <rect key="frame" x="20" y="194" width="335" height="433"/>
-                                <mutableString key="text">Gothic architecture, roughly spanning the 12th - 16th centuries, expanded on Romanesque styles, with taller and more intricate forms. On both the front and the back of the Reims Cathedral, a prototypical Gothic construction, there are many pointed arches; flying buttresses feature prominently on the back of the construction. 
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIU-Ns-u3i">
+                                <rect key="frame" x="20" y="238" width="335" height="389"/>
+                                <mutableString key="text">Gothic architecture, roughly spanning the 12th - 16th centuries, expanded on Romanesque styles, with taller and more intricate forms. Wealthy patrons, both religious and secular, encouraged builders to make powerful expressions. Pointed arches and flying buttresses were innovations by builders at the time to support higher and more expansive designs. 
 
-Pointed arches and flying buttresses were innovations by builders at the time to support higher and more expansive designs. In the United States and Europe, the Gothic revival in the 18th and 19th centuries sampled heavily from this period. 
+On both the front and the back of the Reims Cathedral, a prototypical Gothic construction, there are many pointed arches; flying buttresses feature prominently on the back of the construction. 
 
-Gothic architecture eventually gave way to Renaissance architecture, as builders broke away from the rigid medieval style.   </mutableString>
+In the United States and Europe, the Gothic revival in the 18th and 19th centuries sampled heavily from this period. 
+
+As the Renaissance swept through Western societies, spurred by the philosophical and artistic return to Classical roots, builders broke away from the rigid medieval style embodied by the Romanesque and Gothic eras. </mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gothic: 1100 CE - 1500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DM2-EW-x2A">
-                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gothic: 1100 - 1500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DM2-EW-x2A">
+                                <rect key="frame" x="20" y="104" width="335" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="sjU-5s-0ar"/>
                                 </constraints>
@@ -289,7 +370,7 @@ Gothic architecture eventually gave way to Renaissance architecture, as builders
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-91-3hh">
-                                <rect key="frame" x="20" y="99" width="335" height="75"/>
+                                <rect key="frame" x="20" y="143" width="335" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="fEh-Z2-vy7"/>
                                 </constraints>
@@ -315,10 +396,11 @@ Location: Reims, France Completed: circa 1275 AD</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uii-Me-sep"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fT-nA-ssf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013.5999999999999" y="98.50074962518741"/>
+            <point key="canvasLocation" x="3212" y="99"/>
         </scene>
         <!--Classical-->
         <scene sceneID="VnB-6B-to5">
@@ -329,7 +411,7 @@ Location: Reims, France Completed: circa 1275 AD</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classical: 800 BCE - 500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fK-D0-nCD">
-                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                                <rect key="frame" x="20" y="104" width="335" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="DiO-q6-NcQ"/>
                                 </constraints>
@@ -338,7 +420,7 @@ Location: Reims, France Completed: circa 1275 AD</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="264-Aj-SCo">
-                                <rect key="frame" x="20" y="99" width="335" height="75"/>
+                                <rect key="frame" x="20" y="143" width="335" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="dfo-8V-naT"/>
                                 </constraints>
@@ -348,14 +430,16 @@ Location: Athens, Greece Completed: circa 432 BCE</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-jx-AcI">
-                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-jx-AcI">
+                                <rect key="frame" x="20" y="238" width="335" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">The buildings of the Classical era represent some of the oldest structures in Western civilization, and are marked by extreme symmetry and proportion.  
+                                <mutableString key="text">Buildings of the Classical era represent some of the oldest structures in Western civilization and are marked by extreme symmetry and proportion. 
 
-Spanning roughly 800 B.C to 500 A.D., architects used distinctive columns to prop up entablatures (horizontal supports) that often contained sculpts of Gods. The Parthenon, perhaps the epitome of Ancient Grecian architecture, stands as a perfect example of the Classical form. 
+Spanning roughly 800 B.C to 500 A.D., architects used distinctive columns to prop up entablatures (horizontal supports) that often contained sculpts of Gods. The Parthenon, perhaps the epitome of Ancient Grecian architecture, stands as a shining example of column and entablature coming together in perfect symmetry. 
 
-These buildings are among the most re-sampled throughout history. Neo-classical, Renaissance, Classical Revival, and many other styles borrowed heavily from Ancient Greek and Roman builders. Particularly in the United States, government buildings and state capitols almost always feature distinctive Classical columns. As the Roman empire expanded and Eastern influences arrived, Classical forms gave way to Byzantine architecture.   </mutableString>
+Classical forms are among the most re-sampled throughout history. Neo-classical, Renaissance, Classical Revival, and many other styles borrowed heavily from Ancient Greek and Roman builders. Particularly in the United States, government buildings, state capitols, museums, and banks often feature distinctive Classical columns. 
+
+As the Roman empire continued to expand and encounter other cultures, architectural styles began to cross-pollinate, resulting in an entirely new style: Byzantine.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -376,10 +460,11 @@ These buildings are among the most re-sampled throughout history. Neo-classical,
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DBV-sB-cM1"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0S-7q-d02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032.8" y="98.50074962518741"/>
+            <point key="canvasLocation" x="1231" y="99"/>
         </scene>
         <!--Byzantine-->
         <scene sceneID="eBB-k4-7BX">
@@ -389,19 +474,21 @@ These buildings are among the most re-sampled throughout history. Neo-classical,
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-XB-E5d">
-                                <rect key="frame" x="20" y="194" width="335" height="433"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-XB-E5d">
+                                <rect key="frame" x="20" y="238" width="335" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Byzantine Architecture lasted from the 6th to the 15th centuries and rose and fell with the Byzantine Empire. Under Constantine the Great, the Roman empire moved its capitol to modern-day Turkey in the 4th century, sweeping in an era of engineering influence from across the Middle East.  
+                                <mutableString key="text">Byzantine Architecture lasted from the 6th to the 15th centuries, rising and falling with the Byzantine Empire. Under Constantine the Great, the Roman empire moved its capitol to modern-day Turkey in the 4th century, sweeping in an era of engineering influence from across the Middle East.  
 
-Builders added domed roofs (traditionally seen on mosques) to classical forms and switched to brick as their primary construction material. The Hagia Sophia stands as one of the first major architectural marvels to exemplify Byzantine architecture.
+Builders added domed roofs (traditionally seen on mosques) to classical forms and switched to brick as their primary construction material. The Hagia Sophia stands as one of the first major architectural marvels to exemplify Byzantine architecture. 
 
-In Europe, architects moved on to Romanesque architecture fairly quickly as society transitioned into medieval times. However, Byzantine architecture would continue to spread like wildfire throughout the Middle East and beyond: even today visitors to Russia can see the neo-Byzantine forms that extend across the entire Western portion of the country. The domed roofs would prove to be a lasting addition to architecture around the world.</mutableString>
+In Europe, architects moved on to Romanesque architecture fairly quickly as society transitioned into medieval times. However, Byzantine architecture would continue to spread like wildfire throughout the Middle East and beyond: even today visitors to Russia can see the neo-Byzantine forms that extend across the entire Western portion of the country. 
+
+Domed roofs in particular would prove to be a lasting addition to architecture around the world. In the United States and Eastern Europe, state capitols or government buildings often feature this distinctive dome. </mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Byzantine: 500 CE - 1500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-wS-FDR">
-                                <rect key="frame" x="20" y="60" width="335" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Byzantine: 500 - 1500 CE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-wS-FDR">
+                                <rect key="frame" x="20" y="104" width="335" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="F41-jK-S9u"/>
                                 </constraints>
@@ -410,7 +497,7 @@ In Europe, architects moved on to Romanesque architecture fairly quickly as soci
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sM-uE-kZl">
-                                <rect key="frame" x="20" y="99" width="335" height="75"/>
+                                <rect key="frame" x="20" y="143" width="335" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="0Df-A9-Vt4"/>
                                 </constraints>
@@ -436,10 +523,11 @@ Location: Istanbul, Turkey Completed: circa 537 AD</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0cC-r7-ytI"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CD-yJ-8UC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693.5999999999999" y="98.50074962518741"/>
+            <point key="canvasLocation" x="1892" y="99"/>
         </scene>
         <!--About-->
         <scene sceneID="gNW-Gf-ORl">
@@ -449,23 +537,18 @@ Location: Istanbul, Turkey Completed: circa 537 AD</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-cC-Btc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-cC-Btc">
                                 <rect key="frame" x="8" y="79" width="359" height="578"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <mutableString key="text">*Travel Architecture*
- An easy-to-use app to learn more about pre-modern architecture. Designed for travelers and students abroad who are curious what a particular building's architectural style is.
+
+ An easy-to-use app to learn more about pre-modern architecture. Designed for travelers and students abroad who are curious what a particular building's architectural style is, but often don't have internet access and don't want to read through a Wikipedia article. 
+
+The app is meant to be "easy", so it is heavily curated and distills each architectural era to one or two distinguishing features, assuming that most users are not interested in a textbook classification.
 
 *About*
 
 Travel Architecture covers pre-modern Western architecture, roughly spanning the time period from 850 B.C. to A.D. 1400. Selected photos from each major architectural style (classical, byzantine, romanesque, and gothic) were used to train a neural net, which is then applied to any new photo received. A confidence score is returned based on features detected in each photo. The architect then walks the user through each architectural style using a representative 3D model of a building that exemplifies the construction of that time period. 
-
-Classical: Parthenon. Athens, Greece. 
-
-Byzantine: Hagia Sophia. Istanbul, Turkey (formerly Constantinople). Completed circa 537 A.D.
-
-Romanesque: Collegiate Church of St. Mary and St. Alexius. Tum, Poland. Completed circa 1161 A.D.
-
-Gothic: Reims Cathedral. Reims, France. Completed circa 1275 A.D. 
 
 Modern architecture (Renaissance and beyond) often sample the distinctive pre-modern styles, especially Classical. Later versions of this app will include classification for modern architecture. 
 
@@ -473,9 +556,10 @@ Modern architecture (Renaissance and beyond) often sample the distinctive pre-mo
 
 1. Select a photo from your gallery or take a photo using your camera
 2. A computer vision model leverages a neural net to classify features in your photo and presents the top two architectural styles the model believes are present in the photo
-3. Click on architect
-4. Choose a flat surface with good lighting and place an example building of the four pre-modern architectural styles available. A chalkboard appears above each model to teach you more about what you're seeing
-5. Walk around the model to see the building from different angles and compare it to the building you took a photo of
+3. Click on the architect icon
+4. Choose a flat surface with good lighting and place an example building of the four pre-modern architectural styles available. 
+5. Walk around the model or turn the model on screen to see the building from different angles and compare it to the building in your original photo.
+6. Learn more about the era of the building and its historical context by clicking on the book icon 
 
 *Neural Net*
 
@@ -495,7 +579,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 *Developer*
 
-This app was developed by Ian Zhang, and you can find the code @ https://github.com/iZhang/travel-architecture</mutableString>
+This app was developed by Ian Zhang, and you can find the code @ https://github.com/iZhang/travel-architecture
+
+*Thank You*
+
+To the 3D creators of the models used in this app, including KonZawad, arte gotico y romatico y neogotico, Photthawin, and giotis.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -513,7 +601,7 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMY-TX-2B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-995" y="824"/>
+            <point key="canvasLocation" x="-1234" y="819"/>
         </scene>
         <!--Virtual Object Selection View Controller-->
         <scene sceneID="8F1-Zd-946">
@@ -580,10 +668,10 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
             </objects>
             <point key="canvasLocation" x="-326" y="632"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--StandardViewController-->
         <scene sceneID="d6e-qV-Njd">
             <objects>
-                <navigationController id="fF2-s0-XNS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StandardViewController" title="StandardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fF2-s0-XNS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkw-cU-ALj">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -594,9 +682,9 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EC5-RK-w1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1650" y="99"/>
+            <point key="canvasLocation" x="-2151" y="99"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Classifier-->
         <scene sceneID="MkW-tN-iPX">
             <objects>
                 <viewController id="2U3-g1-dia" customClass="CameraViewController" customModule="Travel_Architect" customModuleProvider="target" sceneMemberID="viewController">
@@ -610,45 +698,30 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c70-BN-YPe">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bSn-5c-sdH"/>
                                     <barButtonItem systemItem="camera" id="pi2-fW-PcD">
                                         <connections>
                                             <action selector="takePicture" destination="2U3-g1-dia" id="daB-5U-RP2"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bSn-5c-sdH"/>
-                                    <barButtonItem title="Architect" id="NuL-U4-f7c">
-                                        <connections>
-                                            <segue destination="BV1-FR-VrT" kind="show" id="gY0-kX-KGG"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="0U6-KJ-Nu9"/>
-                                    <barButtonItem title="About" image="about-button" landscapeImage="about-button" largeContentSizeImage="about-button" id="fFb-zQ-Yw9">
-                                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-14" maxY="0.0"/>
-                                        <connections>
-                                            <segue destination="XLJ-kk-qHw" kind="show" id="X2A-q8-LCA"/>
-                                        </connections>
-                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEf-Je-9z4">
-                                <rect key="frame" x="16" y="547" width="138" height="60"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lt6-5W-epM">
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsV-gu-WYJ">
+                                <rect key="frame" x="128" y="554" width="138" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="aAu-2m-LPQ">
                                     <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ud-qR-ouZ">
-                                            <rect key="frame" x="20" y="20" width="98" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" fixedFrame="YES" text="Add a photo." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sc-dW-NCX">
+                                            <rect key="frame" x="20" y="19" width="98" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="6Ud-qR-ouZ" firstAttribute="top" secondItem="lt6-5W-epM" secondAttribute="top" constant="20" symbolic="YES" id="Egm-ok-UkZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="6Ud-qR-ouZ" secondAttribute="trailing" constant="20" symbolic="YES" id="dGq-bE-Azl"/>
-                                        <constraint firstItem="6Ud-qR-ouZ" firstAttribute="leading" secondItem="lt6-5W-epM" secondAttribute="leading" constant="20" symbolic="YES" id="wqj-Ob-ic5"/>
-                                        <constraint firstAttribute="bottom" secondItem="6Ud-qR-ouZ" secondAttribute="bottom" constant="20" symbolic="YES" id="yQa-kz-qUc"/>
-                                    </constraints>
                                 </view>
                                 <blurEffect style="extraLight"/>
                                 <userDefinedRuntimeAttributes>
@@ -662,32 +735,46 @@ This app was developed by Ian Zhang, and you can find the code @ https://github.
                         <constraints>
                             <constraint firstItem="nSL-LL-yOu" firstAttribute="trailing" secondItem="c70-BN-YPe" secondAttribute="trailing" id="54M-tf-i5t"/>
                             <constraint firstAttribute="trailing" secondItem="nSL-LL-yOu" secondAttribute="trailing" id="EjI-MO-MIK"/>
-                            <constraint firstItem="7w9-0J-Anu" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eEf-Je-9z4" secondAttribute="trailing" constant="16" id="FVR-YD-xo0"/>
                             <constraint firstItem="nSL-LL-yOu" firstAttribute="bottom" secondItem="c70-BN-YPe" secondAttribute="bottom" id="IQI-v0-wBy"/>
                             <constraint firstItem="nSL-LL-yOu" firstAttribute="centerY" secondItem="PCH-kp-asL" secondAttribute="centerY" id="NZp-1n-iki"/>
                             <constraint firstItem="nSL-LL-yOu" firstAttribute="leading" secondItem="PCH-kp-asL" secondAttribute="leading" id="XKA-YB-89b"/>
                             <constraint firstItem="nSL-LL-yOu" firstAttribute="top" secondItem="PCH-kp-asL" secondAttribute="top" id="fIW-kc-poD"/>
-                            <constraint firstItem="c70-BN-YPe" firstAttribute="top" secondItem="eEf-Je-9z4" secondAttribute="bottom" constant="16" id="hso-Va-cBs"/>
                             <constraint firstItem="nSL-LL-yOu" firstAttribute="leading" secondItem="c70-BN-YPe" secondAttribute="leading" id="smE-vT-HxN"/>
-                            <constraint firstItem="eEf-Je-9z4" firstAttribute="leading" secondItem="PCH-kp-asL" secondAttribute="leadingMargin" id="xkC-Ge-H9d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7w9-0J-Anu"/>
                     </view>
-                    <navigationItem key="navigationItem" id="p0v-TX-qbH"/>
+                    <navigationItem key="navigationItem" title="Classifier" id="p0v-TX-qbH">
+                        <barButtonItem key="leftBarButtonItem" title="About" image="about-button" landscapeImage="about-button" largeContentSizeImage="about-button" id="fFb-zQ-Yw9">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-14" maxY="0.0"/>
+                            <connections>
+                                <segue destination="XLJ-kk-qHw" kind="show" id="X2A-q8-LCA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Architect" image="architect" id="NuL-U4-f7c">
+                            <connections>
+                                <segue destination="BV1-FR-VrT" kind="show" id="gY0-kX-KGG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cameraButton" destination="pi2-fW-PcD" id="1DW-bx-VDn"/>
-                        <outlet property="classificationLabel" destination="6Ud-qR-ouZ" id="KUP-On-89f"/>
+                        <outlet property="classificationLabel" destination="7Sc-dW-NCX" id="hb4-jQ-1k8"/>
                         <outlet property="imageView" destination="nSL-LL-yOu" id="26Q-7k-Ybk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5J-hd-Byk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-995" y="99"/>
+            <point key="canvasLocation" x="-1234.4000000000001" y="98.50074962518741"/>
         </scene>
     </scenes>
     <resources>
         <image name="about-button" width="44" height="44"/>
         <image name="add" width="48" height="48"/>
+        <image name="architect" width="22" height="22"/>
+        <image name="architect-icon" width="1128" height="1122"/>
+        <image name="book-icon" width="1600" height="1600"/>
+        <image name="camera-icon" width="50" height="50"/>
+        <image name="cancel-icon" width="50" height="50"/>
         <image name="restart" width="20" height="23"/>
         <image name="restartPressed" width="20" height="23"/>
     </resources>
