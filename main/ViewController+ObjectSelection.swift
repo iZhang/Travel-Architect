@@ -40,6 +40,8 @@ extension ViewController: VirtualObjectSelectionViewControllerDelegate
 								   alignment: focusSquareAlignment,
 								   allowAnimation: false)
 
+        statusViewController.showMessage("Try ROTATING or DRAGGING the model to get different views")
+        
         updateQueue.async {
             self.sceneView.scene.rootNode.addChildNode(virtualObject)
 			self.sceneView.addOrUpdateAnchor(for: virtualObject)
